@@ -1,9 +1,7 @@
-# eduMeet in docker container
+# CV in docker container
 
-Docker hub repository: [edumeet/edumeet](https://hub.docker.com/r/edumeet/edumeet)
 
-This is the container, or a "dockerized" version of the [eduMeet](https://github.com/edumeet/edumeet).
-(Successor of [multiparty meeting](https://github.com/havfo/multiparty-meeting) fork of mediasoup-demo)
+This is the container, or a "dockerized" version of the CV.
 
 ## Run it in few easy step
 
@@ -67,4 +65,4 @@ Container works in "host" network mode, because birdge mode has the following is
 
 ## Further Informations
 
-Read more about configs and settings in [eduMeet](https://github.com/edumeet/edumeet) README.
+Read more about WebRtc and Mediasoup settings
