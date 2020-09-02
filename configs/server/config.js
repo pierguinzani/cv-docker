@@ -399,7 +399,15 @@ module.exports =
 		// mediasoup WebRtcTransport settings.
 		webRtcTransport:
 		{
-			listenIps: getListenIps(),
+			listenIps :
+			[
+				// change 192.0.2.1 IPv4 to your server's IPv4 address!!
+				{ ip: '172.31.6.248', announcedIp: '18.191.17.55' }
+
+				// Can have multiple listening interfaces
+				// change 2001:DB8::1 IPv6 to your server's IPv6 address!!
+				// { ip: '2001:DB8::1', announcedIp: null }
+			],
 			initialAvailableOutgoingBitrate: 1000000,
 			minimumAvailableOutgoingBitrate: 600000,
 			// Additional options that are not part of WebRtcTransportOptions.
