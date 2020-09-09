@@ -138,7 +138,7 @@ module.exports =
 	listeningPort: 443,
 	// Any http request is redirected to https.
 	// Listening port for http server.
-	listeningRedirectPort: 80,
+	listeningRedirectPort: 8080,
 	// Listens only on http, only on listeningPort
 	// listeningRedirectPort disabled
 	// use case: loadbalancer backend
@@ -399,15 +399,7 @@ module.exports =
 		// mediasoup WebRtcTransport settings.
 		webRtcTransport:
 		{
-			listenIps :
-			[
-				// change 192.0.2.1 IPv4 to your server's IPv4 address!!
-				{ ip: '172.31.6.248', announcedIp: '18.191.17.55' }
-
-				// Can have multiple listening interfaces
-				// change 2001:DB8::1 IPv6 to your server's IPv6 address!!
-				// { ip: '2001:DB8::1', announcedIp: null }
-			],
+			listenIps : getListenIps(),
 			initialAvailableOutgoingBitrate: 1000000,
 			minimumAvailableOutgoingBitrate: 600000,
 			// Additional options that are not part of WebRtcTransportOptions.

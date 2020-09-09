@@ -132,7 +132,7 @@ var config =
 	lockLastN            : false,
 	// Add file and uncomment for adding logo to appbar
 	// logo       : 'images/logo.svg',
-	title                : 'eduMeet',
+	title                : 'Consultório Virtual',
 	// Service & Support URL
 	// if not set then not displayed on the about modals
 	supportUrl           : 'https://support.example.com',

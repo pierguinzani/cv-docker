@@ -2,9 +2,9 @@ version: "3.3"
 
 services:
 # edumeet
-  edumeet:
+  consultoriovirtual:
     env_file: .env
-    image: edumeet/edumeet:${TAG}
+    image: consultoriovirtual/consultoriovirtual:${TAG}
     depends_on: 
       - redis
     build:

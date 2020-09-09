@@ -9,6 +9,6 @@ docker run \
 	-e BASEDIR=${BASEDIR} -e EDUMEET=${EDUMEET} \
 	--network host \
 	--restart unless-stopped \
-	--name edumeet \
+	--name cv-local \
 	--detach \
-      misi/edumeet:${TAG}
+      pierguinzani/cv-local:${TAG}
