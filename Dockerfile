@@ -14,7 +14,7 @@ WORKDIR ${BASEDIR}
 RUN apt-get update;apt-get install -y git bash
 
 #checkout code
-RUN git clone --single-branch --branch ${BRANCH} https://github.com/pierguinzani/${EDUMEET}.git
+RUN git clone --single-branch --branch ${BRANCH} https://github.com/AugustoZanoni/${EDUMEET}.git
 
 #install app dep
 WORKDIR ${BASEDIR}/${EDUMEET}/app
