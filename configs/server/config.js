@@ -52,7 +52,7 @@ function getListenIps() {
   Object.keys(interfaces).forEach((netInterface) => {
    interfaces[netInterface].forEach((interfaceObject) => {
     if (interfaceObject.family === 'IPv4' && !interfaceObject.internal) {
-     addresses.push({ ip: interfaceObject.address, announcedIp: null });
+     addresses.push({ ip: interfaceObject.address, announcedIp: '15.228.45.168' });
     }
    });
   });
@@ -138,7 +138,7 @@ module.exports =
 	listeningPort: 443,
 	// Any http request is redirected to https.
 	// Listening port for http server.
-	listeningRedirectPort: 8080,
+	listeningRedirectPort: 80,
 	// Listens only on http, only on listeningPort
 	// listeningRedirectPort disabled
 	// use case: loadbalancer backend
