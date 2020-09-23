@@ -131,11 +131,11 @@ var config =
 	// If truthy, users can NOT change number of speakers visible
 	lockLastN            : false,
 	// Add file and uncomment for adding logo to appbar
-	// logo       : 'images/logo.svg',
+	 logo       : 'images/logo.png',
 	title                : 'Consultório Virtual',
 	// Service & Support URL
 	// if not set then not displayed on the about modals
-	supportUrl           : 'https://support.example.com',
+	supportUrl           : 'telessaude.ma@huufma.br',
 	// Privacy and dataprotection URL or path
 	// by default privacy/privacy.html
 	// that is a placeholder for your policies
@@ -179,17 +179,6 @@ var config =
 					'&:hover'       :
 					{
 						backgroundColor : '#518029'
-					}
-				}
-			},
-			MuiButton :
-			{
-				containedSecondary :
-				{
-					backgroundColor : '#B2004C',
-					'&:hover'       :
-					{
-						backgroundColor : '#800A3F'
 					}
 				}
 			}
