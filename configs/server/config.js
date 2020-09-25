@@ -52,7 +52,7 @@ function getListenIps() {
   Object.keys(interfaces).forEach((netInterface) => {
    interfaces[netInterface].forEach((interfaceObject) => {
     if (interfaceObject.family === 'IPv4' && !interfaceObject.internal) {
-     addresses.push({ ip: interfaceObject.address, announcedIp: '15.228.45.168' });
+     addresses.push({ ip: interfaceObject.address, announcedIp: null });
     }
    });
   });

@@ -66,3 +66,11 @@ Container works in "host" network mode, because birdge mode has the following is
 ## Further Informations
 
 Read more about WebRtc and Mediasoup settings
+
+## Running 
+```ssh
+sudo docker-compose build --build-arg SSH_KEY="$(cat /home/piercarlo/Documentos/cv-docker/github_key)" consultoriovirtual
+```
+```ssh
+sudo docker-compose up -d
+```
